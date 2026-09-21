@@ -1,0 +1,408 @@
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.identifiers to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.identifiers` for environment variables or `env.get_wrapper_attr('identifiers')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:127: UserWarning: [33mWARN: The obs returned by the `reset()` method should be an int or np.int64, actual type: <class 'numpy.int32'>[0m
+  logger.warn(f"{pre} should be an int or np.int64, actual type: {type(obs)}")
+torch cuda available=True
+###### DQL
+Learning with: episode_count=5,iteration_count=100,ϵ=0.9,ϵ_min=0.1, ϵ_expdecay=5000,γ=0.015, lr=0.01, replaymemory=10000,
+batch=512, target_update=10
+  ## Episode: 1/5 'DQL' ϵ=0.9000, γ=0.015, lr=0.01, replaymemory=10000,
+batch=512, target_update=10
+Episode 1|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.sample_valid_action to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.sample_valid_action` for environment variables or `env.get_wrapper_attr('sample_valid_action')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:127: UserWarning: [33mWARN: The obs returned by the `step()` method should be an int or np.int64, actual type: <class 'numpy.int32'>[0m
+  logger.warn(f"{pre} should be an int or np.int64, actual type: {type(obs)}")
+Episode 1|Iteration 1|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 1|Iteration 1|reward:   14.0|last_reward_at:    1|Elapsed Time: 0:00:00||
+Episode 1|Iteration 2|reward:   16.0|last_reward_at:    1|Elapsed Time: 0:00:00||
+Episode 1|Iteration 2|reward:   16.0|last_reward_at:    2|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/agent_dql.py:408: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:252.)
+  state_batch = torch.tensor(states_to_consider).to(device)
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.is_action_valid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.is_action_valid` for environment variables or `env.get_wrapper_attr('is_action_valid')` that will search the reminding wrappers.[0m
+  logger.warn(
+Episode 1|Iteration 15|reward:  116.0|last_reward_at:    2|Elapsed Time: 0:00:00||
+Episode 1|Iteration 15|reward:  116.0|last_reward_at:   15|Elapsed Time: 0:00:00||
+Episode 1|Iteration 24|reward:  127.0|last_reward_at:   15|Elapsed Time: 0:00:00||
+Episode 1|Iteration 24|reward:  127.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 1|Iteration 28|reward:  136.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 1|Iteration 28|reward:  136.0|last_reward_at:   28|Elapsed Time: 0:00:00||
+Episode 1|Iteration 32|reward:  138.0|last_reward_at:   28|Elapsed Time: 0:00:00||
+Episode 1|Iteration 32|reward:  138.0|last_reward_at:   32|Elapsed Time: 0:00:00||
+Episode 1|Iteration 37|reward:  146.0|last_reward_at:   32|Elapsed Time: 0:00:00||
+Episode 1|Iteration 37|reward:  146.0|last_reward_at:   37|Elapsed Time: 0:00:00||
+Episode 1|Iteration 50|reward:  152.0|last_reward_at:   37|Elapsed Time: 0:00:00||
+Episode 1|Iteration 50|reward:  152.0|last_reward_at:   50|Elapsed Time: 0:00:00||
+Episode 1|Iteration 74|reward:  152.0|last_reward_at:   50|Elapsed Time: 0:00:00||
+Episode 1|Iteration 97|reward:  152.0|last_reward_at:   50|Elapsed Time: 0:00:00||
+Episode 1|Iteration 100|reward:  152.0|last_reward_at:   50|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/plotting.py:175: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:335: UserWarning: [33mWARN: No render fps was declared in the environment (env.metadata['render_fps'] is None or not defined), rendering may occur at inconsistent fps.[0m
+  logger.warn(
+  Episode 1 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 3/9 (0.25)
+    explore-remote: 4/29 (0.12)
+    explore-connect: 0/37 (0.00)
+    exploit-local: 0/1 (0.00)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 1/16 (0.06)
+  exploit deflected to exploration: 0
+                   status  ...              remote_attacks
+id                         ...                            
+start               owned  ...                          []
+1_LinuxNode         owned  ...  [ProbeWindows, ProbeLinux]
+2_WindowsNode  discovered  ...  [ProbeWindows, ProbeLinux]
+
+[3 rows x 4 columns]
+  ## Episode: 2/5 'DQL' ϵ=0.8843, γ=0.015, lr=0.01, replaymemory=10000,
+batch=512, target_update=10
+Episode 2|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.sample_valid_action to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.sample_valid_action` for environment variables or `env.get_wrapper_attr('sample_valid_action')` that will search the reminding wrappers.[0m
+
+Episode 2|Iteration 1|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 2|Iteration 1|reward:   14.0|last_reward_at:    1|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.is_action_valid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.is_action_valid` for environment variables or `env.get_wrapper_attr('is_action_valid')` that will search the reminding wrappers.[0m
+
+Episode 2|Iteration 7|reward:  114.0|last_reward_at:    1|Elapsed Time: 0:00:00||
+Episode 2|Iteration 7|reward:  114.0|last_reward_at:    7|Elapsed Time: 0:00:00||
+Episode 2|Iteration 12|reward:  128.0|last_reward_at:    7|Elapsed Time: 0:00:00||
+Episode 2|Iteration 12|reward:  128.0|last_reward_at:   12|Elapsed Time: 0:00:00||
+Episode 2|Iteration 15|reward:  134.0|last_reward_at:   12|Elapsed Time: 0:00:00||
+Episode 2|Iteration 15|reward:  134.0|last_reward_at:   15|Elapsed Time: 0:00:00||
+Episode 2|Iteration 17|reward:  142.0|last_reward_at:   15|Elapsed Time: 0:00:00||
+Episode 2|Iteration 17|reward:  142.0|last_reward_at:   17|Elapsed Time: 0:00:00||
+Episode 2|Iteration 20|reward:  144.0|last_reward_at:   17|Elapsed Time: 0:00:00||
+Episode 2|Iteration 20|reward:  144.0|last_reward_at:   20|Elapsed Time: 0:00:00||
+Episode 2|Iteration 29|reward:  146.0|last_reward_at:   20|Elapsed Time: 0:00:00||
+Episode 2|Iteration 29|reward:  146.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 44|reward:  146.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 59|reward:  146.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 68|reward:  152.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 68|reward:  152.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+Episode 2|Iteration 92|reward:  152.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+Episode 2|Iteration 100|reward:  152.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/plotting.py:175: UserWarning:
+
+FigureCanvasAgg is non-interactive, and thus cannot be shown
+
+  Episode 2 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 3/18 (0.14)
+    explore-remote: 4/29 (0.12)
+    explore-connect: 1/35 (0.03)
+    exploit-local: 0/2 (0.00)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 0/8 (0.00)
+  exploit deflected to exploration: 0
+                   status  ...              remote_attacks
+id                         ...                            
+start               owned  ...                          []
+1_LinuxNode         owned  ...  [ProbeWindows, ProbeLinux]
+2_WindowsNode  discovered  ...  [ProbeWindows, ProbeLinux]
+
+[3 rows x 4 columns]
+  ## Episode: 3/5 'DQL' ϵ=0.8688, γ=0.015, lr=0.01, replaymemory=10000,
+batch=512, target_update=10
+Episode 3|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.sample_valid_action to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.sample_valid_action` for environment variables or `env.get_wrapper_attr('sample_valid_action')` that will search the reminding wrappers.[0m
+
+Episode 3|Iteration 1|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 3|Iteration 1|reward:   14.0|last_reward_at:    1|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.is_action_valid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.is_action_valid` for environment variables or `env.get_wrapper_attr('is_action_valid')` that will search the reminding wrappers.[0m
+
+Episode 3|Iteration 9|reward:   18.0|last_reward_at:    1|Elapsed Time: 0:00:00||
+Episode 3|Iteration 9|reward:   18.0|last_reward_at:    9|Elapsed Time: 0:00:00||
+Episode 3|Iteration 16|reward:  118.0|last_reward_at:    9|Elapsed Time: 0:00:00||
+Episode 3|Iteration 16|reward:  118.0|last_reward_at:   16|Elapsed Time: 0:00:00||
+Episode 3|Iteration 22|reward:  132.0|last_reward_at:   16|Elapsed Time: 0:00:00||
+Episode 3|Iteration 22|reward:  132.0|last_reward_at:   22|Elapsed Time: 0:00:00||
+Episode 3|Iteration 29|reward:  138.0|last_reward_at:   22|Elapsed Time: 0:00:00||
+Episode 3|Iteration 29|reward:  138.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 3|Iteration 38|reward:  140.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 3|Iteration 38|reward:  140.0|last_reward_at:   38|Elapsed Time: 0:00:00||
+Episode 3|Iteration 43|reward:  240.0|last_reward_at:   38|Elapsed Time: 0:00:00||
+Episode 3|Iteration 43|reward:  240.0|last_reward_at:   43|Elapsed Time: 0:00:00||
+Episode 3|Iteration 56|reward:  246.0|last_reward_at:   43|Elapsed Time: 0:00:00||
+Episode 3|Iteration 56|reward:  246.0|last_reward_at:   56|Elapsed Time: 0:00:00||
+Episode 3|Iteration 61|reward:  252.0|last_reward_at:   56|Elapsed Time: 0:00:00||
+Episode 3|Iteration 61|reward:  252.0|last_reward_at:   61|Elapsed Time: 0:00:00||
+Episode 3|Iteration 66|reward:  266.0|last_reward_at:   61|Elapsed Time: 0:00:00||
+Episode 3|Iteration 66|reward:  266.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 3|Iteration 68|reward:  366.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 3|Iteration 68|reward:  366.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+Episode 3|Iteration 79|reward:  377.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+Episode 3|Iteration 79|reward:  377.0|last_reward_at:   79|Elapsed Time: 0:00:00||
+Episode 3|Iteration 92|reward:  377.0|last_reward_at:   79|Elapsed Time: 0:00:00||
+Episode 3|Iteration 93|reward:  383.0|last_reward_at:   79|Elapsed Time: 0:00:00||
+Episode 3|Iteration 93|reward:  383.0|last_reward_at:   93|Elapsed Time: 0:00:00||
+Episode 3|Iteration 99|reward:  389.0|last_reward_at:   93|Elapsed Time: 0:00:00||
+Episode 3|Iteration 99|reward:  389.0|last_reward_at:   99|Elapsed Time: 0:00:00||
+Episode 3|Iteration 100|reward:  389.0|last_reward_at:   99|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/plotting.py:175: UserWarning:
+
+FigureCanvasAgg is non-interactive, and thus cannot be shown
+
+  Episode 3 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 4/18 (0.18)
+    explore-remote: 5/25 (0.17)
+    explore-connect: 1/33 (0.03)
+    exploit-local: 2/6 (0.25)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 2/4 (0.33)
+  exploit deflected to exploration: 4
+                   status  ...              remote_attacks
+id                         ...                            
+start               owned  ...                          []
+1_LinuxNode         owned  ...  [ProbeWindows, ProbeLinux]
+2_WindowsNode       owned  ...  [ProbeWindows, ProbeLinux]
+3_LinuxNode         owned  ...  [ProbeWindows, ProbeLinux]
+4_WindowsNode  discovered  ...  [ProbeWindows, ProbeLinux]
+
+[5 rows x 4 columns]
+  ## Episode: 4/5 'DQL' ϵ=0.8536, γ=0.015, lr=0.01, replaymemory=10000,
+batch=512, target_update=10
+Episode 4|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.sample_valid_action to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.sample_valid_action` for environment variables or `env.get_wrapper_attr('sample_valid_action')` that will search the reminding wrappers.[0m
+
+Episode 4|Iteration 1|reward:    0.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 4|Iteration 2|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 4|Iteration 2|reward:   14.0|last_reward_at:    2|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.is_action_valid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.is_action_valid` for environment variables or `env.get_wrapper_attr('is_action_valid')` that will search the reminding wrappers.[0m
+
+Episode 4|Iteration 12|reward:   14.0|last_reward_at:    2|Elapsed Time: 0:00:00||
+Episode 4|Iteration 12|reward:   16.0|last_reward_at:    2|Elapsed Time: 0:00:00||
+Episode 4|Iteration 12|reward:   16.0|last_reward_at:   12|Elapsed Time: 0:00:00||
+Episode 4|Iteration 17|reward:  116.0|last_reward_at:   12|Elapsed Time: 0:00:00||
+Episode 4|Iteration 17|reward:  116.0|last_reward_at:   17|Elapsed Time: 0:00:00||
+Episode 4|Iteration 24|reward:  118.0|last_reward_at:   17|Elapsed Time: 0:00:00||
+Episode 4|Iteration 24|reward:  118.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 4|Iteration 39|reward:  132.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 4|Iteration 39|reward:  132.0|last_reward_at:   39|Elapsed Time: 0:00:00||
+Episode 4|Iteration 54|reward:  132.0|last_reward_at:   39|Elapsed Time: 0:00:00||
+Episode 4|Iteration 55|reward:  138.0|last_reward_at:   39|Elapsed Time: 0:00:00||
+Episode 4|Iteration 55|reward:  138.0|last_reward_at:   55|Elapsed Time: 0:00:00||
+Episode 4|Iteration 62|reward:  146.0|last_reward_at:   55|Elapsed Time: 0:00:00||
+Episode 4|Iteration 62|reward:  146.0|last_reward_at:   62|Elapsed Time: 0:00:00||
+Episode 4|Iteration 66|reward:  152.0|last_reward_at:   62|Elapsed Time: 0:00:00||
+Episode 4|Iteration 66|reward:  152.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 4|Iteration 85|reward:  152.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 4|Iteration 89|reward:  252.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 4|Iteration 89|reward:  252.0|last_reward_at:   89|Elapsed Time: 0:00:00||
+Episode 4|Iteration 91|reward:  263.0|last_reward_at:   89|Elapsed Time: 0:00:00||
+Episode 4|Iteration 91|reward:  263.0|last_reward_at:   91|Elapsed Time: 0:00:00||
+Episode 4|Iteration 100|reward:  263.0|last_reward_at:   91|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/plotting.py:175: UserWarning:
+
+FigureCanvasAgg is non-interactive, and thus cannot be shown
+
+  Episode 4 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 4/11 (0.27)
+    explore-remote: 4/25 (0.14)
+    explore-connect: 1/36 (0.03)
+    exploit-local: 0/0 (NaN)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 1/18 (0.05)
+  exploit deflected to exploration: 5
+                   status  ...              remote_attacks
+id                         ...                            
+start               owned  ...                          []
+1_LinuxNode         owned  ...  [ProbeWindows, ProbeLinux]
+2_WindowsNode       owned  ...  [ProbeWindows, ProbeLinux]
+3_LinuxNode    discovered  ...  [ProbeWindows, ProbeLinux]
+
+[4 rows x 4 columns]
+  ## Episode: 5/5 'DQL' ϵ=0.8386, γ=0.015, lr=0.01, replaymemory=10000,
+batch=512, target_update=10
+Episode 5|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.sample_valid_action to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.sample_valid_action` for environment variables or `env.get_wrapper_attr('sample_valid_action')` that will search the reminding wrappers.[0m
+
+Episode 5|Iteration 1|reward:    0.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 5|Iteration 8|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 5|Iteration 8|reward:   14.0|last_reward_at:    8|Elapsed Time: 0:00:00||
+Episode 5|Iteration 10|reward:   18.0|last_reward_at:    8|Elapsed Time: 0:00:00||
+Episode 5|Iteration 10|reward:   18.0|last_reward_at:   10|Elapsed Time: 0:00:00||
+Episode 5|Iteration 21|reward:   20.0|last_reward_at:   10|Elapsed Time: 0:00:00||
+Episode 5|Iteration 21|reward:   20.0|last_reward_at:   21|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.is_action_valid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.is_action_valid` for environment variables or `env.get_wrapper_attr('is_action_valid')` that will search the reminding wrappers.[0m
+
+Episode 5|Iteration 24|reward:  120.0|last_reward_at:   21|Elapsed Time: 0:00:00||
+Episode 5|Iteration 24|reward:  120.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 5|Iteration 36|reward:  120.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 5|Iteration 37|reward:  131.0|last_reward_at:   24|Elapsed Time: 0:00:00||
+Episode 5|Iteration 37|reward:  131.0|last_reward_at:   37|Elapsed Time: 0:00:00||
+Episode 5|Iteration 40|reward:  139.0|last_reward_at:   37|Elapsed Time: 0:00:00||
+Episode 5|Iteration 40|reward:  139.0|last_reward_at:   40|Elapsed Time: 0:00:00||
+Episode 5|Iteration 52|reward:  145.0|last_reward_at:   40|Elapsed Time: 0:00:00||
+Episode 5|Iteration 52|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 57|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 61|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 66|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 69|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 74|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 78|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 82|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:00||
+Episode 5|Iteration 87|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:01||
+Episode 5|Iteration 92|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:01||
+Episode 5|Iteration 97|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:01||
+Episode 5|Iteration 100|reward:  145.0|last_reward_at:   52|Elapsed Time: 0:00:01||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/plotting.py:175: UserWarning:
+
+FigureCanvasAgg is non-interactive, and thus cannot be shown
+
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/cyberbattle/agents/baseline/plotting.py:175: UserWarning:
+
+FigureCanvasAgg is non-interactive, and thus cannot be shown
+
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.name to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.name` for environment variables or `env.get_wrapper_attr('name')` that will search the reminding wrappers.[0m
+
+  Episode 5 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 2/14 (0.12)
+    explore-remote: 4/43 (0.09)
+    explore-connect: 0/34 (0.00)
+    exploit-local: 0/2 (0.00)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 1/0 (1.00)
+  exploit deflected to exploration: 6
+                   status  ...              remote_attacks
+id                         ...                            
+start               owned  ...                          []
+1_LinuxNode         owned  ...  [ProbeWindows, ProbeLinux]
+2_WindowsNode  discovered  ...  [ProbeWindows, ProbeLinux]
+
+[3 rows x 4 columns]
+simulation ended
+###### Random search
+Learning with: episode_count=3,iteration_count=100,ϵ=1.0,ϵ_min=0.0, 
+  ## Episode: 1/3 'Random search' ϵ=1.0000, 
+Episode 1|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+/home/play0520empire/Documents/TFG_Alexandru_Raboaca/CyberBattleSim/.venv/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning:
+
+[33mWARN: env.sample_valid_action to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.sample_valid_action` for environment variables or `env.get_wrapper_attr('sample_valid_action')` that will search the reminding wrappers.[0m
+
+Episode 1|Iteration 1|reward:    0.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 1|Iteration 6|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 1|Iteration 6|reward:   14.0|last_reward_at:    6|Elapsed Time: 0:00:00||
+Episode 1|Iteration 8|reward:   18.0|last_reward_at:    6|Elapsed Time: 0:00:00||
+Episode 1|Iteration 8|reward:   18.0|last_reward_at:    8|Elapsed Time: 0:00:00||
+Episode 1|Iteration 28|reward:  118.0|last_reward_at:    8|Elapsed Time: 0:00:00||
+Episode 1|Iteration 28|reward:  118.0|last_reward_at:   28|Elapsed Time: 0:00:00||
+Episode 1|Iteration 38|reward:  120.0|last_reward_at:   28|Elapsed Time: 0:00:00||
+Episode 1|Iteration 38|reward:  120.0|last_reward_at:   38|Elapsed Time: 0:00:00||
+Episode 1|Iteration 59|reward:  120.0|last_reward_at:   38|Elapsed Time: 0:00:00||
+Episode 1|Iteration 65|reward:  131.0|last_reward_at:   38|Elapsed Time: 0:00:00||
+Episode 1|Iteration 65|reward:  131.0|last_reward_at:   65|Elapsed Time: 0:00:00||
+Episode 1|Iteration 66|reward:  139.0|last_reward_at:   65|Elapsed Time: 0:00:00||
+Episode 1|Iteration 66|reward:  139.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 1|Iteration 68|reward:  148.0|last_reward_at:   66|Elapsed Time: 0:00:00||
+Episode 1|Iteration 68|reward:  148.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+Episode 1|Iteration 76|reward:  154.0|last_reward_at:   68|Elapsed Time: 0:00:00||
+Episode 1|Iteration 76|reward:  154.0|last_reward_at:   76|Elapsed Time: 0:00:00||
+Episode 1|Iteration 81|reward:  254.0|last_reward_at:   76|Elapsed Time: 0:00:00||
+Episode 1|Iteration 81|reward:  254.0|last_reward_at:   81|Elapsed Time: 0:00:00||
+Episode 1|Iteration 84|reward:  265.0|last_reward_at:   81|Elapsed Time: 0:00:00||
+Episode 1|Iteration 84|reward:  265.0|last_reward_at:   84|Elapsed Time: 0:00:00||
+Episode 1|Iteration 100|reward:  265.0|last_reward_at:   84|Elapsed Time: 0:00:00||
+  Episode 1 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 4/13 (0.24)
+    explore-remote: 4/45 (0.08)
+    explore-connect: 2/32 (0.06)
+    exploit-local: 0/0 (NaN)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 0/0 (NaN)
+  exploit deflected to exploration: 0
+  ## Episode: 2/3 'Random search' ϵ=1.0000, 
+Episode 2|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 2|Iteration 1|reward:    0.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 2|Iteration 12|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 2|Iteration 12|reward:   14.0|last_reward_at:   12|Elapsed Time: 0:00:00||
+Episode 2|Iteration 13|reward:   18.0|last_reward_at:   12|Elapsed Time: 0:00:00||
+Episode 2|Iteration 13|reward:   18.0|last_reward_at:   13|Elapsed Time: 0:00:00||
+Episode 2|Iteration 15|reward:  118.0|last_reward_at:   13|Elapsed Time: 0:00:00||
+Episode 2|Iteration 15|reward:  118.0|last_reward_at:   15|Elapsed Time: 0:00:00||
+Episode 2|Iteration 16|reward:  129.0|last_reward_at:   15|Elapsed Time: 0:00:00||
+Episode 2|Iteration 16|reward:  129.0|last_reward_at:   16|Elapsed Time: 0:00:00||
+Episode 2|Iteration 19|reward:  137.0|last_reward_at:   16|Elapsed Time: 0:00:00||
+Episode 2|Iteration 19|reward:  137.0|last_reward_at:   19|Elapsed Time: 0:00:00||
+Episode 2|Iteration 23|reward:  143.0|last_reward_at:   19|Elapsed Time: 0:00:00||
+Episode 2|Iteration 23|reward:  143.0|last_reward_at:   23|Elapsed Time: 0:00:00||
+Episode 2|Iteration 25|reward:  145.0|last_reward_at:   23|Elapsed Time: 0:00:00||
+Episode 2|Iteration 25|reward:  145.0|last_reward_at:   25|Elapsed Time: 0:00:00||
+Episode 2|Iteration 29|reward:  154.0|last_reward_at:   25|Elapsed Time: 0:00:00||
+Episode 2|Iteration 29|reward:  154.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 55|reward:  154.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 90|reward:  154.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+Episode 2|Iteration 100|reward:  154.0|last_reward_at:   29|Elapsed Time: 0:00:00||
+  Episode 2 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 3/17 (0.15)
+    explore-remote: 4/39 (0.09)
+    explore-connect: 1/36 (0.03)
+    exploit-local: 0/0 (NaN)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 0/0 (NaN)
+  exploit deflected to exploration: 0
+  ## Episode: 3/3 'Random search' ϵ=1.0000, 
+Episode 3|Iteration 0|reward: ------|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 3|Iteration 1|reward:    0.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 3|Iteration 7|reward:   14.0|last_reward_at: ----|Elapsed Time: 0:00:00||
+Episode 3|Iteration 7|reward:   14.0|last_reward_at:    7|Elapsed Time: 0:00:00||
+Episode 3|Iteration 11|reward:   18.0|last_reward_at:    7|Elapsed Time: 0:00:00||
+Episode 3|Iteration 11|reward:   18.0|last_reward_at:   11|Elapsed Time: 0:00:00||
+Episode 3|Iteration 13|reward:   20.0|last_reward_at:   11|Elapsed Time: 0:00:00||
+Episode 3|Iteration 13|reward:   20.0|last_reward_at:   13|Elapsed Time: 0:00:00||
+Episode 3|Iteration 54|reward:   20.0|last_reward_at:   13|Elapsed Time: 0:00:00||
+Episode 3|Iteration 82|reward:  120.0|last_reward_at:   13|Elapsed Time: 0:00:00||
+Episode 3|Iteration 82|reward:  120.0|last_reward_at:   82|Elapsed Time: 0:00:00||
+Episode 3|Iteration 83|reward:  134.0|last_reward_at:   82|Elapsed Time: 0:00:00||
+Episode 3|Iteration 83|reward:  134.0|last_reward_at:   83|Elapsed Time: 0:00:00||
+Episode 3|Iteration 86|reward:  140.0|last_reward_at:   83|Elapsed Time: 0:00:00||
+Episode 3|Iteration 86|reward:  140.0|last_reward_at:   86|Elapsed Time: 0:00:00||
+Episode 3|Iteration 100|reward:  140.0|last_reward_at:   86|Elapsed Time: 0:00:00||
+  Episode 3 stopped at t=100 
+  Breakdown [Reward/NoReward (Success rate)]
+    explore-local: 2/6 (0.25)
+    explore-remote: 3/39 (0.07)
+    explore-connect: 1/49 (0.02)
+    exploit-local: 0/0 (NaN)
+    exploit-remote: 0/0 (NaN)
+    exploit-connect: 0/0 (NaN)
+  exploit deflected to exploration: 0
+simulation ended
+Episode duration -- DQN=Red, Random=Green
+  100.00  ┼[32m─[0m[32m─[0m[31m─[0m[31m─[0m
+Cumulative rewards -- DQN=Red, Random=Green
+  220.20  ┼                                                                   [31m╭[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m
+  198.18  ┤                                              [31m╭[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m╯[0m
+  176.16  ┤                                  [31m╭[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m╯[0m             [32m╭[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m
+  154.14  ┤                     [31m╭[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m╯[0m                         [32m│[0m
+  132.12  ┤           [31m╭[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m─[0m[31m╯[0m                                     [32m╭[0m[32m╯[0m
+  110.10  ┤       [31m╭[0m[31m─[0m[31m─[0m[31m─[0m[31m╯[0m                               [32m╭[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m╯[0m
+   88.08  ┤       [31m│[0m    [32m╭[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m╯[0m
+   66.06  ┤      [31m╭[0m[32m╭[0m[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m╯[0m
+   44.04  ┤   [31m╭[0m[31m─[0m[31m─[0m[32m╭[0m[32m╯[0m
+   22.02  ┤[31m╭[0m[31m─[0m[31m─[0m[31m╯[0m[32m╭[0m[32m─[0m[32m╯[0m
+    0.00  ┼[32m─[0m[32m─[0m[32m─[0m[32m─[0m[32m╯[0m
