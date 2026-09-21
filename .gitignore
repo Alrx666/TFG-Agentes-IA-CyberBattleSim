@@ -1,0 +1,26 @@
+# Instrucciones locales para Codex / agentes
+AGENTS.md
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Resultados temporales o pesados
+results/raw/
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
