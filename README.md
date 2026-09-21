@@ -4,43 +4,48 @@
 
 **Diseño y evaluación de agentes inteligentes para simulaciones de ciberseguridad mediante CyberBattleSim**
 
-## Objetivo
+## Descripción
 
-El objetivo de este Trabajo de Fin de Grado es estudiar, integrar y evaluar agentes de inteligencia artificial dentro de entornos simulados de ciberseguridad utilizando CyberBattleSim.
+Este Trabajo de Fin de Grado estudia el uso de agentes de inteligencia artificial en entornos simulados de ciberseguridad mediante CyberBattleSim.
 
-La idea principal es analizar cómo distintos tipos de agentes toman decisiones dentro de un entorno de ataque simulado y comparar su comportamiento mediante métricas reproducibles.
+El objetivo es analizar cómo distintos tipos de agentes toman decisiones dentro de un entorno de ataque simulado, comparando su comportamiento mediante métricas reproducibles.
 
-## Punto de partida
+El proyecto parte de los agentes baseline incluidos en CyberBattleSim y plantea posteriormente la integración de agentes basados en modelos de lenguaje.
+
+## Objetivos
+
+- Comprender el funcionamiento interno de CyberBattleSim.
+- Analizar las observaciones, acciones y recompensas disponibles.
+- Estudiar los agentes baseline existentes.
+- Diseñar e integrar nuevos agentes de IA.
+- Evaluar y comparar distintos enfoques bajo las mismas condiciones.
+- Analizar las ventajas, limitaciones y costes de cada enfoque.
+
+## Estado actual
 
 Actualmente se ha:
 
 - Instalado CyberBattleSim correctamente.
-- Configurado su entorno virtual con Python 3.10.
-- Verificado que PyTorch detecta CUDA.
+- Configurado un entorno virtual con Python 3.10.
+- Verificado el uso de CUDA mediante PyTorch.
 - Ejecutado correctamente el baseline incluido en CyberBattleSim.
-- Probado los agentes:
-  - DQL
-  - Random Search
+- Probado los agentes DQL y Random Search.
+- Preparado la estructura inicial del repositorio.
+- Creado documentación de estado y decisiones técnicas.
 
-## Línea de trabajo prevista
+El proyecto se encuentra actualmente en la fase de comprensión del entorno y análisis de la interfaz entre agentes y CyberBattleSim.
 
-El proyecto se desarrollará de forma incremental:
+Para más detalle:
 
-1. Comprender el funcionamiento de CyberBattleSim.
-2. Analizar sus entornos, acciones, observaciones y sistema de recompensas.
-3. Estudiar los agentes baseline disponibles.
-4. Identificar el punto de integración para nuevos agentes.
-5. Implementar uno o varios agentes basados en IA.
-6. Diseñar experimentos reproducibles.
-7. Comparar los agentes mediante métricas comunes.
-8. Analizar los resultados obtenidos.
+- `docs/estado.md`
+- `docs/decisiones.md`
 
 ## Estructura del repositorio
 
-```text
+```markdown
 .
-├── docs/        # Documentación y memoria técnica
-├── notebooks/   # Experimentos y análisis interactivos
-├── scripts/     # Scripts propios del proyecto
-├── results/     # Resultados, gráficas y datos
+├── docs/        # Documentación técnica y decisiones del proyecto
+├── notebooks/   # Exploración, visualización y análisis
+├── scripts/     # Scripts propios del TFG
+├── results/     # Resultados, gráficas y datos generados
 └── README.md
